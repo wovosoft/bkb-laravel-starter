@@ -11,6 +11,7 @@
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "spatie/laravel-permission": "^5.5",
+        "wovosoft/bd-geocode": "dev-master",
         "wovosoft/bd-hrm-profile": "dev-master",
         "wovosoft/bkb-offices": "^1.0",
         "wovosoft/laravel-common": "^1.0"

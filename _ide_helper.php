@@ -17513,6 +17513,79 @@
      
 }
 
+    namespace Wovosoft\BdGeocode\Facades { 
+            /**
+     * 
+     *
+     */ 
+        class BdGeocode {
+                    /**
+         * Returns Division Management Actions
+         *
+         * @return \Wovosoft\BdGeocode\Actions\Divisions 
+         * @static 
+         */ 
+        public static function divisions()
+        {
+                        /** @var \Wovosoft\BdGeocode\BdGeocode $instance */
+                        return $instance->divisions();
+        }
+                    /**
+         * Returns District Management Actions
+         *
+         * @return \Wovosoft\BdGeocode\Actions\Districts 
+         * @static 
+         */ 
+        public static function districts()
+        {
+                        /** @var \Wovosoft\BdGeocode\BdGeocode $instance */
+                        return $instance->districts();
+        }
+                    /**
+         * Returns Upazila Management Actions
+         *
+         * @return \Wovosoft\BdGeocode\Models\Upazila 
+         * @static 
+         */ 
+        public static function upazilas()
+        {
+                        /** @var \Wovosoft\BdGeocode\BdGeocode $instance */
+                        return $instance->upazilas();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function unions()
+        {
+                        /** @var \Wovosoft\BdGeocode\BdGeocode $instance */
+                        return $instance->unions();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function treeOf($type, $id)
+        {
+                        /** @var \Wovosoft\BdGeocode\BdGeocode $instance */
+                        return $instance->treeOf($type, $id);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function routes($divisionController = 'Wovosoft\\BdGeocode\\Http\\Controllers\\DivisionController', $districtController = 'Wovosoft\\BdGeocode\\Http\\Controllers\\DistrictController', $upazilaController = 'Wovosoft\\BdGeocode\\Http\\Controllers\\UpazilaController', $unionController = 'Wovosoft\\BdGeocode\\Http\\Controllers\\UnionController')
+        {
+                        return \Wovosoft\BdGeocode\BdGeocode::routes($divisionController, $districtController, $upazilaController, $unionController);
+        }
+         
+    }
+     
+}
+
     namespace Wovosoft\BdHrmProfile\Facades { 
             /**
      * 
@@ -21491,6 +21564,7 @@ namespace  {
             class View extends \Illuminate\Support\Facades\View {}
             class Debugbar extends \Barryvdh\Debugbar\Facades\Debugbar {}
             class Flare extends \Spatie\LaravelIgnition\Facades\Flare {}
+            class BdGeocode extends \Wovosoft\BdGeocode\Facades\BdGeocode {}
             class BdHrmProfile extends \Wovosoft\BdHrmProfile\Facades\BdHrmProfile {}
             class BkbOffices extends \Wovosoft\BkbOffices\Facades\BkbOffices {}
             class LaravelCommon extends \Wovosoft\LaravelCommon\Facades\LaravelCommon {}

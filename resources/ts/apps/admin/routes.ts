@@ -4,6 +4,7 @@ import Index from "./pages/Index.vue";
 import Roles from "./pages/roles/Index.vue"
 import Permissions from "./pages/permissions/Index.vue";
 import Users from "./pages/users/Index.vue";
+import Geocode from "./../../geocode/Index.vue";
 
 const routes = <Array<RouteRecordRaw>>[
     {
@@ -25,6 +26,11 @@ const routes = <Array<RouteRecordRaw>>[
         path: '/permissions',
         name: 'permissions.index',
         component: Permissions
+    },
+    {
+        path: '/geocode',
+        name: 'geocode.index',
+        component: Geocode
     }
 ];
 

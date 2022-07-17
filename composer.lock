@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "68c63ee4ec8f47bd618b005c27b6cb3d",
+    "content-hash": "eb6081b22e70f10903e3ffaa747a38da",
     "packages": [
         {
             "name": "brick/math",
@@ -5256,6 +5256,68 @@
             "time": "2022-06-03T18:03:27+00:00"
         },
         {
+            "name": "wovosoft/bd-geocode",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wovosoft/bd-geocode.git",
+                "reference": "98a7cfd80a0f245b04442cde0868b7691cb060c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wovosoft/bd-geocode/zipball/98a7cfd80a0f245b04442cde0868b7691cb060c1",
+                "reference": "98a7cfd80a0f245b04442cde0868b7691cb060c1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~9",
+                "laravel/scout": "^9.4"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~7",
+                "phpunit/phpunit": "~9.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Wovosoft\\BdGeocode\\BdGeocodeServiceProvider"
+                    ],
+                    "aliases": {
+                        "BdGeocode": "Wovosoft\\BdGeocode\\Facades\\BdGeocode"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wovosoft\\BdGeocode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Author Name",
+                    "email": "author@email.com",
+                    "homepage": "http://author.com"
+                }
+            ],
+            "description": ":package_description",
+            "homepage": "https://github.com/wovosoft/bd-geocode",
+            "keywords": [
+                "BdGeocode",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/wovosoft/bd-geocode/issues",
+                "source": "https://github.com/wovosoft/bd-geocode/tree/master"
+            },
+            "time": "2022-07-17T09:16:04+00:00"
+        },
+        {
             "name": "wovosoft/bd-hrm-profile",
             "version": "dev-master",
             "source": {
@@ -8920,6 +8982,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "wovosoft/bd-geocode": 20,
         "wovosoft/bd-hrm-profile": 20
     },
     "prefer-stable": true,

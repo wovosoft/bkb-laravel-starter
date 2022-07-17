@@ -14,6 +14,12 @@
                             Permissions
                         </NavItemLink>
                     </NavItemDropdown>
+
+                    <NavItemDropdown text="Addresses">
+                        <NavItemLink :to="{name:'geocode.index'}">
+                            Divisions
+                        </NavItemLink>
+                    </NavItemDropdown>
                 </Nav>
             </Collapse>
         </template>

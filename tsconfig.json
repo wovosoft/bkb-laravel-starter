@@ -1,0 +1,27 @@
+/// <reference types="vite/client" />
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es2017",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "jsx": "preserve",
+        "types": [
+            "vite/client"
+        ],
+        "rootDirs": [
+            "resources/ts"
+        ],
+        "typeRoots": [
+            "resources/ts/types"
+        ]
+    },
+    "include": [
+        "resources/ts/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

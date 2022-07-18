@@ -5261,17 +5261,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wovosoft/bd-geocode.git",
-                "reference": "98a7cfd80a0f245b04442cde0868b7691cb060c1"
+                "reference": "43bce8fee3e9a6edc1319faf0bcaf0da0ef2ee78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wovosoft/bd-geocode/zipball/98a7cfd80a0f245b04442cde0868b7691cb060c1",
-                "reference": "98a7cfd80a0f245b04442cde0868b7691cb060c1",
+                "url": "https://api.github.com/repos/wovosoft/bd-geocode/zipball/43bce8fee3e9a6edc1319faf0bcaf0da0ef2ee78",
+                "reference": "43bce8fee3e9a6edc1319faf0bcaf0da0ef2ee78",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~9",
-                "laravel/scout": "^9.4"
+                "laravel/scout": "^9.4",
+                "wovosoft/laravel-common": ">=v1.0.0"
             },
             "require-dev": {
                 "orchestra/testbench": "~7",
@@ -5300,22 +5301,25 @@
             ],
             "authors": [
                 {
-                    "name": "Author Name",
-                    "email": "author@email.com",
-                    "homepage": "http://author.com"
+                    "name": "Narayan Adhikary",
+                    "email": "wovosoft@gmail.com",
+                    "homepage": "https://github.com/wovosoft"
                 }
             ],
             "description": ":package_description",
             "homepage": "https://github.com/wovosoft/bd-geocode",
             "keywords": [
                 "BdGeocode",
+                "bangladesh",
+                "districts",
+                "divisions",
                 "laravel"
             ],
             "support": {
                 "issues": "https://github.com/wovosoft/bd-geocode/issues",
                 "source": "https://github.com/wovosoft/bd-geocode/tree/master"
             },
-            "time": "2022-07-17T09:16:04+00:00"
+            "time": "2022-07-18T08:51:46+00:00"
         },
         {
             "name": "wovosoft/bd-hrm-profile",

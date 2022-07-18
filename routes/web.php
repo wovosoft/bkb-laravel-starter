@@ -9,18 +9,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
-Route::get("/admin", function () {
-    return view("admin");
+Route::middleware("auth")->group(function () {
+    \Wovosoft\BdGeocode\BdGeocode::routes();
+    BkbOffices::routes();
 });
-
 
 Route::prefix("admin")
     ->name("admin.")
+    ->middleware("auth")
     ->group(function () {
+        Route::view("/", "admin");
+
         Route::prefix("roles")
             ->name("roles.")
             ->controller(RolesController::class)

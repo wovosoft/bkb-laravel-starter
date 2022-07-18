@@ -18,10 +18,11 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $user = \App\Models\User::factory()->create([
+            'name' => 'Narayan Adhikary',
+            'email' => 'narayanadhikary24@gmail.com',
+            "password" => bcrypt("123456789")
+        ]);
 
         foreach (["admin", "customer", "checker", "maker", "finalizer"] as $roleName) {
             Role::create(['name' => $roleName]);

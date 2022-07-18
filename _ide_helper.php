@@ -17567,19 +17567,65 @@
          *
          * @static 
          */ 
-        public static function treeOf($type, $id)
+        public static function leavesOf($types, $id)
         {
                         /** @var \Wovosoft\BdGeocode\BdGeocode $instance */
-                        return $instance->treeOf($type, $id);
+                        return $instance->leavesOf($types, $id);
         }
                     /**
          * 
          *
          * @static 
          */ 
-        public static function routes($divisionController = 'Wovosoft\\BdGeocode\\Http\\Controllers\\DivisionController', $districtController = 'Wovosoft\\BdGeocode\\Http\\Controllers\\DistrictController', $upazilaController = 'Wovosoft\\BdGeocode\\Http\\Controllers\\UpazilaController', $unionController = 'Wovosoft\\BdGeocode\\Http\\Controllers\\UnionController')
+        public static function rootOf($types, $id)
         {
-                        return \Wovosoft\BdGeocode\BdGeocode::routes($divisionController, $districtController, $upazilaController, $unionController);
+                        /** @var \Wovosoft\BdGeocode\BdGeocode $instance */
+                        return $instance->rootOf($types, $id);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function routes()
+        {
+                        return \Wovosoft\BdGeocode\BdGeocode::routes();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function divisionRoutes()
+        {
+                        return \Wovosoft\BdGeocode\BdGeocode::divisionRoutes();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function districtRoutes()
+        {
+                        return \Wovosoft\BdGeocode\BdGeocode::districtRoutes();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function upazilaRoutes()
+        {
+                        return \Wovosoft\BdGeocode\BdGeocode::upazilaRoutes();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function unionRoutes()
+        {
+                        return \Wovosoft\BdGeocode\BdGeocode::unionRoutes();
         }
          
     }

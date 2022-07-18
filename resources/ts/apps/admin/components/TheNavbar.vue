@@ -15,9 +15,12 @@
                         </NavItemLink>
                     </NavItemDropdown>
 
-                    <NavItemDropdown text="Addresses">
+                    <NavItemDropdown text="Configuration">
+                        <NavItemLink :to="{name:'offices.index'}">
+                            Offices
+                        </NavItemLink>
                         <NavItemLink :to="{name:'geocode.index'}">
-                            Divisions
+                            Addresses
                         </NavItemLink>
                     </NavItemDropdown>
                 </Nav>

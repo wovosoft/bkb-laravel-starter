@@ -24,21 +24,19 @@
                         </NavItemLink>
                     </NavItemDropdown>
                 </Nav>
+                <Nav>
+                    <NavItem v-if="loading">
+                        <Spinner size="sm" variant="light"/>
+                    </NavItem>
+                </Nav>
             </Collapse>
         </template>
+
     </Navbar>
 </template>
 
-<script lang="ts">
-import {defineComponent} from "vue";
-import {Navbar, Collapse, Nav, NavItem, NavItemDropdown, DropdownItem, Input, Button} from "@wovosoft/wovoui";
+<script lang="ts" setup>
+import {loading} from "../shared/globalLoader";
+import {Navbar, Collapse, Nav, NavItem, NavItemDropdown, Spinner} from "@wovosoft/wovoui";
 import NavItemLink from "./NavItemLink.vue";
-
-export default defineComponent({
-    components: {
-        Navbar, Collapse, Nav, NavItem, NavItemDropdown, DropdownItem, Input, Button,
-        NavItemLink
-    }
-})
-
 </script>

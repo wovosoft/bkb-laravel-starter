@@ -5385,16 +5385,16 @@
         },
         {
             "name": "wovosoft/bkb-offices",
-            "version": "v1.0.3",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wovosoft/bkb-offices.git",
-                "reference": "674a2ee7b3844b25e579d1115a9c033e7e66dc65"
+                "reference": "e6a571ba62e6d2fa6d8a2867d74923c1e45d92bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wovosoft/bkb-offices/zipball/674a2ee7b3844b25e579d1115a9c033e7e66dc65",
-                "reference": "674a2ee7b3844b25e579d1115a9c033e7e66dc65",
+                "url": "https://api.github.com/repos/wovosoft/bkb-offices/zipball/e6a571ba62e6d2fa6d8a2867d74923c1e45d92bf",
+                "reference": "e6a571ba62e6d2fa6d8a2867d74923c1e45d92bf",
                 "shasum": ""
             },
             "require": {
@@ -5444,9 +5444,9 @@
             ],
             "support": {
                 "issues": "https://github.com/wovosoft/bkb-offices/issues",
-                "source": "https://github.com/wovosoft/bkb-offices/tree/v1.0.3"
+                "source": "https://github.com/wovosoft/bkb-offices/tree/v1.0.5"
             },
-            "time": "2022-07-18T11:06:26+00:00"
+            "time": "2022-07-19T07:08:57+00:00"
         },
         {
             "name": "wovosoft/laravel-common",

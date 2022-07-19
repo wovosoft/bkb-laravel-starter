@@ -1,12 +1,11 @@
 import axios from "axios";
+import {getUrl} from "../helpers";
 
 const store = (url: string, data: object): Promise<any> => {
-    // @ts-ignore
-    return axios.put([import.meta.env.VITE_API_URL, url].join("/"), JSON.parse(JSON.stringify(data)));
+    return axios.put(getUrl(url), JSON.parse(JSON.stringify(data)));
 }
 const update = (url: string, id: number, data: object): Promise<any> => {
-    // @ts-ignore
-    return axios.put([import.meta.env.VITE_API_URL, url, id].join("/"), JSON.parse(JSON.stringify(data)));
+    return axios.put(getUrl([url, id].join(url.endsWith("/") ? "" : "/")), JSON.parse(JSON.stringify(data)));
 }
 export default function (urls: { submit: string, update: string }) {
     return {
